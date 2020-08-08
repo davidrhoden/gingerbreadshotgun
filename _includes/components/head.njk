@@ -7,10 +7,10 @@
   {% set css %}
     {% include "assets/css/inline.css" %}
   {% endset %}
-  <style>{{ css | cssmin | safe }}</style>
+  <style>{{ css | safe }}</style>
   {% set js %}
     {% include "assets/js/inline.js" %}
   {% endset %}
-  <script>{{ js | jsmin | safe }}</script>
+  <script>{{ js | safe }}</script>
   {% seo "" %}
 </head>

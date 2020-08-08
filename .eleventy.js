@@ -1,6 +1,6 @@
 const { DateTime } = require("luxon");
-const CleanCSS = require("clean-css");
-const UglifyJS = require("uglify-es");
+// const CleanCSS = require("clean-css");
+// const UglifyJS = require("uglify-es");
 const htmlmin = require("html-minifier");
 const slugify = require("slugify");
 const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
@@ -29,20 +29,49 @@ module.exports = function(eleventyConfig) {
     return DateTime.fromJSDate(dateObj).toFormat("yyyy-MM-dd");
   });
 
-  // Minify CSS
-  eleventyConfig.addFilter("cssmin", function(code) {
-    return new CleanCSS({}).minify(code).styles;
+  // // Minify CSS
+  // eleventyConfig.addFilter("cssmin", function(code) {
+  //   return new CleanCSS({}).minify(code).styles;
+  // });
+
+  // // Minify JS
+  // eleventyConfig.addFilter("jsmin", function(code) {
+  //   let minified = UglifyJS.minify(code);
+  //   if (minified.error) {
+  //     console.log("UglifyJS error: ", minified.error);
+  //     return code;
+  //   }
+  //   return minified.code;
+  // });
+
+    eleventyConfig.addCollection("posts", function(collection) {
+    const coll = collection.getFilteredByTag("post");
+
+    for(let i = 0; i < coll.length ; i++) {
+      const prevPost = coll[i-1];
+      const nextPost = coll[i + 1];
+
+      coll[i].data["prevPost"] = prevPost;
+      coll[i].data["nextPost"] = nextPost;
+    }
+
+    return coll;
   });
 
-  // Minify JS
-  eleventyConfig.addFilter("jsmin", function(code) {
-    let minified = UglifyJS.minify(code);
-    if (minified.error) {
-      console.log("UglifyJS error: ", minified.error);
-      return code;
+  eleventyConfig.addCollection("notes", function(collection) {
+    const allNotes = collection.getFilteredByTag("note");
+
+    for(let i = 0; i < allNotes.length ; i++) {
+      const prevNote = allNotes[i-1];
+      const nextNote = allNotes[i + 1];
+
+      allNotes[i].data["prevNote"] = prevNote;
+      allNotes[i].data["nextNote"] = nextNote;
     }
-    return minified.code;
+
+    return allNotes;
   });
+
 
   // Minify HTML output
   eleventyConfig.addTransform("htmlmin", function(content, outputPath) {
