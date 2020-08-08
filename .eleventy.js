@@ -1,9 +1,8 @@
 const { DateTime } = require("luxon");
-// const CleanCSS = require("clean-css");
-// const UglifyJS = require("uglify-es");
 const htmlmin = require("html-minifier");
 const slugify = require("slugify");
 const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
+const pluginSEO = require("eleventy-plugin-seo");
 
 module.exports = function(eleventyConfig) {
 
@@ -29,22 +28,7 @@ module.exports = function(eleventyConfig) {
     return DateTime.fromJSDate(dateObj).toFormat("yyyy-MM-dd");
   });
 
-  // // Minify CSS
-  // eleventyConfig.addFilter("cssmin", function(code) {
-  //   return new CleanCSS({}).minify(code).styles;
-  // });
-
-  // // Minify JS
-  // eleventyConfig.addFilter("jsmin", function(code) {
-  //   let minified = UglifyJS.minify(code);
-  //   if (minified.error) {
-  //     console.log("UglifyJS error: ", minified.error);
-  //     return code;
-  //   }
-  //   return minified.code;
-  // });
-
-    eleventyConfig.addCollection("posts", function(collection) {
+  eleventyConfig.addCollection("posts", function(collection) {
     const coll = collection.getFilteredByTag("post");
 
     for(let i = 0; i < coll.length ; i++) {
@@ -57,21 +41,6 @@ module.exports = function(eleventyConfig) {
 
     return coll;
   });
-
-  eleventyConfig.addCollection("notes", function(collection) {
-    const allNotes = collection.getFilteredByTag("note");
-
-    for(let i = 0; i < allNotes.length ; i++) {
-      const prevNote = allNotes[i-1];
-      const nextNote = allNotes[i + 1];
-
-      allNotes[i].data["prevNote"] = prevNote;
-      allNotes[i].data["nextNote"] = nextNote;
-    }
-
-    return allNotes;
-  });
-
 
   // Minify HTML output
   eleventyConfig.addTransform("htmlmin", function(content, outputPath) {
@@ -100,6 +69,8 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("static/img");
   eleventyConfig.addPassthroughCopy("admin");
   eleventyConfig.addPassthroughCopy("_includes/assets/");
+  // eleventyConfig.addPassthroughCopy("static/pdf");
+  // eleventyConfig.addPassthroughCopy("static/audio");
 
   /* Markdown Plugins */
   let markdownIt = require("markdown-it");
