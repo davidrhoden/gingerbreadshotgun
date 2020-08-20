@@ -8,5 +8,8 @@ pagination:
   size: 8
   alias: posts
   reverse: true
+eleventyNavigation:
+  key: Blog
+  order: 2
 
 ---
