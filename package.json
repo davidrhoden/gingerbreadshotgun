@@ -1,6 +1,6 @@
 {
   "name": "gingerbreadshotgun",
-  "version": "1.0",
+  "version": "1.0.0",
   "description": "A website for the New Orleans Shotgun Gingerbread House Project",
   "scripts": {
     "build": "npx eleventy",
