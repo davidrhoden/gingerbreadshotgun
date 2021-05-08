@@ -1,7 +1,7 @@
 :root {
 	--primary: black;
 	--secondary: orange;
-	--background: violet;
+	--background: #0e89d2;
 }
 
 *, *:before, *:after {
@@ -24,13 +24,7 @@ body {
 }
 
 main {
-	max-width: 50em;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-main span {
-
+	max-width: 40em;
 }
 
 p,
@@ -63,31 +57,10 @@ main {
 	padding-bottom: 2em;
 }
 
-main :first-child,
-main > article :first-child {
-	margin-top: 0;
-}
-
-pre {
-	font-size: 14px;
-	direction: ltr;
-	text-align: left;
-	white-space: pre;
-	word-spacing: normal;
-	word-break: normal;
-	-moz-tab-size: 2;
-	tab-size: 2;
-	-webkit-hyphens: none;
-	-moz-hyphens: none;
-	-ms-hyphens: none;
-	hyphens: none;
-	padding: 1em;
-	margin: .5em 0;
-}
-
 /* Header Logo (style as h2) */
 header > em {
 	display: block;
+	font-family: "Playfair Display", serif;
 	font-size: 2em;
 	margin: .67em 0;
 	font-weight: bold;
@@ -181,7 +154,7 @@ button {
   padding: 1em;
   margin-bottom: 1em;
 	font-size: 1rem;
-	font-family: "Avenir", "Avenir Next", sans-serif;
+	font-family: sans-serif;
 }
 
 input,
@@ -199,5 +172,11 @@ button {
 @media screen and (min-width:768px) {
 	:root {
 		font-size: 1.1rem;
+	}
+
+	main {
+		margin-left: auto;
+		margin-right: auto;
+		width: 50%;
 	}
 }
