@@ -2,6 +2,7 @@
 	--primary: black;
 	--secondary: orange;
 	--background: #0e89d2;
+	--title: #d8e433;
 }
 
 *, *:before, *:after {
@@ -63,6 +64,7 @@ main {
 
 /* Header Logo (style as h2) */
 header > em {
+	color: var(--title);
 	display: block;
 	font-family: "Playfair Display", serif;
 	font-size: 2em;
