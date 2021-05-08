@@ -1,6 +1,6 @@
 ---
 layout: layouts/home.njk
-title: Home
+title: The Original New Orleans Shotgun Gingerbread House
 date: 2016-01-01T00:00:00.000Z
 permalink: /
 eleventyNavigation:
