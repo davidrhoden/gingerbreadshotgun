@@ -16,10 +16,14 @@ body {
 }
 
 body {
+	background-image: url(/static/img/bushes-dots.png), url(/static/img/bushes-front.png), url(/static/img/bushes-back.png);
+	background-position: center bottom;
+	background-color: var(--background);
+	background-size: cover;
 	display: grid;
 	height: 100vh;
 	grid-template-rows: auto 1fr auto;
-	background-color: var(--background);
+	
 	text-align: center;
 }
 
