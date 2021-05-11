@@ -1,7 +1,8 @@
 :root {
 	--primary: black;
 	--secondary: orange;
-	--background: #0e89d2;
+	--bluesky:rgba(14,137,210,.35);
+	--midblue: rgba(14,137,210,1);
 	--title: #d8e433;
 }
 
@@ -13,19 +14,30 @@ html,
 body {
 	padding: 0;
 	margin: 0;
-	font-family: Helvetica, Arial, sans-serif;
+	font-family: sans-serif;
 }
 
 body {
 	background-image: url(/static/img/bushes-dots.png), url(/static/img/bushes-front.png), url(/static/img/bushes-back.png);
 	background-position: center bottom;
-	background-color: var(--background);
 	background-size: cover;
+	background-color: var(--bluesky);
 	display: grid;
 	height: 100vh;
 	grid-template-rows: auto 1fr auto;
-	
 	text-align: center;
+}
+
+.night body { 
+	background: #000; 
+}
+
+#wrapper {
+}
+
+#house { 
+	height: 80vh; 
+	overflow: visible;
 }
 
 main {
@@ -71,6 +83,7 @@ header > em {
 	margin: .67em 0;
 	font-weight: bold;
 	font-style: normal;
+	text-shadow: 1px 1px var(--midblue);
 }
 
 /* Header Nav */
@@ -101,66 +114,24 @@ header nav li a[data-current="current item"] {
 	background-color: white;
 }
 
-/* Posts List */
-article {
-	margin-bottom: 1em;
-	padding-bottom: 1em;
-	border-bottom: 1px solid #eee;
-	border-bottom: 1px solid var(--secondary);
-}
-
-main > section > article > * {
-	margin-top: 0;
-	margin-bottom: .5em;
-}
-
-/* Post Tags */
-a[rel="tag"],
-a[rel="tag"]:visited {
-	display: inline-block;
-  vertical-align: text-top;
-  text-transform: uppercase;
-	letter-spacing: .1em;
-  font-size: .625em;
-  padding: 0 .5em;
-	line-height: 2em;
-	height: 2em;
-  border: 1px solid var(--secondary);
-	background-color: var(--secondary);
-	color: var(--primary);
-  border-radius: .25em;
-  text-decoration: none;
-	margin: 0 .5em .5em 0;
-}
-
-a[rel="tag"]:hover {
-	border: 1px solid var(--primary);
-	background-color: var(--primary);
-	color: var(--secondary);
-}
-
-a[rel="tag"]:last-child {
-	margin-right: 0;
-}
-
 /* Contact Form */
 form {
-  display: grid;
+    display: grid;
 	padding: 2em 0;
 }
 
 form label {
-  display: none;
+    display: none;
 }
 
 input,
 textarea,
 button {
-  width: 100%;
-  padding: 1em;
-  margin-bottom: 1em;
-	font-size: 1rem;
-	font-family: sans-serif;
+    width: 100%;
+    padding: 1em;
+    margin-bottom: 1em;
+    font-size: 1rem;
+    font-family: sans-serif;
 }
 
 input,
@@ -183,6 +154,8 @@ button {
 	main {
 		margin-left: auto;
 		margin-right: auto;
-		width: 50%;
+		height: 100vh;
+		overflow: hidden;
+		width: 100vw;
 	}
 }
