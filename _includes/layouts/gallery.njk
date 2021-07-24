@@ -1,0 +1,15 @@
+---
+layout: layouts/base.njk
+pageType: page
+section: page
+---
+<h1>{{ title }}</h1>
+
+<div id="viewport">
+	<button id="buttonPrevious">&#10094;</button>
+	<div>{{ layoutContent | safe }}</div>
+	<button id="buttonNext">&#10095;</button>
+</div>
+<div class="flex row-reverse space-between">
+	<div id="caption"></div>
+</div>

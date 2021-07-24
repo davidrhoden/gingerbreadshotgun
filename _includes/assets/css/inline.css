@@ -1,3 +1,11 @@
+/*@font-face {
+    font-family: 'quentincaps';
+    src: url('/static/fonts/quentincaps/quentincaps-webfont.woff2') format('woff2'),
+         url('/static/fonts/quentincaps/quentincaps-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}*/
+
 :root {
 	--primary: black;
 	--secondary: orange;
@@ -14,10 +22,21 @@ html,
 body {
 	padding: 0;
 	margin: 0;
-	font-family: sans-serif;
+	font-family: Georgia, "Zilla Slab", sans-serif;
 }
 
 body {
+	background: 
+	linear-gradient(purple 0%, red 90%), 
+    linear-gradient(to right, purple 0%, yellow 90%),
+    url(/static/img/paper-light.jpg);
+	background-position: center center;
+	background-size: cover;
+  	background-blend-mode: screen, difference, lighten;
+
+}
+
+body.trees {
 	background-image: url(/static/img/bushes-dots.png), url(/static/img/bushes-front.png), url(/static/img/bushes-back.png);
 	background-position: center bottom;
 	background-size: cover;
@@ -32,7 +51,9 @@ body {
 	background: #000; 
 }
 
+
 #wrapper {
+	width:  100%;
 }
 
 #house { 
@@ -42,12 +63,6 @@ body {
 
 main {
 	max-width: 40em;
-}
-
-p,
-pre,
-code {
-	line-height: 1.5;
 }
 
 a[href],
@@ -64,14 +79,14 @@ img {
 	height: auto;
 }
 
-header,
-main,
-footer {
-	padding: 1em;
+main {
+	padding: 0 1em 2em;
 }
 
-main {
-	padding-bottom: 2em;
+header {
+	background-color: white;
+	padding:  1em;
+	text-align:  center;
 }
 
 /* Header Logo (style as h2) */
@@ -80,7 +95,6 @@ header > em {
 	display: block;
 	font-family: "Playfair Display", serif;
 	font-size: 2em;
-	margin: .67em 0;
 	font-weight: bold;
 	font-style: normal;
 	text-shadow: 1px 1px var(--midblue);
@@ -157,5 +171,9 @@ button {
 		height: 100vh;
 		overflow: hidden;
 		width: 100vw;
+	}
+
+	.wrapper {
+		max-width: 75vw;
 	}
 }

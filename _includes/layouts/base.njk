@@ -1,15 +1,12 @@
 <!doctype html>
 <html {% if section %} data-current="{{ section }}"{% endif %} lang="en">
-
 	{% include "components/head.njk" %}
 
-	<body>
+	<body class="{% if pageType %}{{ pageType }}{% endif %} {{ page.fileSlug }} {{ pageClasses }}">
 
 		<header>
-			<em>
-				{{ metadata.title }}
-			</em>
-			{# include "components/nav.njk" #}
+			<em>{{ metadata.title }}</em>
+			{% include "components/nav.njk" %}
 		</header>
 
 		<main>
