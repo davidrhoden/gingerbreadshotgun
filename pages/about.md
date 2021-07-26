@@ -9,8 +9,6 @@ eleventyNavigation:
 
 The National Register of Historic Places named New Orleans home to the largest and most diverse collection of shotgun homes in the U.S. Decorate your own colorful shotgun house and share a NOLA original with the world! <i>Don’t forget to like, share, and check out Facebook for inspiration!</i>
 
-The National Register of Historic Places named New Orleans home to the largest and most diverse collection of shotgun homes in the U.S. Decorate your own colorful shotgun house and share a NOLA original with the world! <i>Don’t forget to like, share, and check out Facebook for inspiration!</i>
-
 New Orleans may be the only city where these modest homes are revered by locals, debated by scholars, compared by owners, painted by artists, and sung about by musicians. We devise complex color schemes to enhance their architectural features, install porch swings to capitalize on their enticing galleries, debate <i>ad infinitum</i> the relative merits of a single shotgun versus a double, and argue whether or not sidehalls and camelbacks really count as shotgun houses.
 
 What do we mean by shotgun house? In the simplest terms, it's a long, narrow dwelling, without a hallway, having a roof ridge that's perpendicular to the street. Some believe shotgun houses originated in Africa, others that they were imported from Haiti. A newer theory holds that the houses were built to adapt to the city's prevailing lot size, 30' wide by 120' deep.

@@ -22,47 +22,27 @@ html,
 body {
 	padding: 0;
 	margin: 0;
-	font-family: Georgia, "Zilla Slab", sans-serif;
+	font-family: Georgia, sans-serif;
 }
 
 body {
-	background: 
+/*	background: 
 	linear-gradient(purple 0%, red 90%), 
     linear-gradient(to right, purple 0%, yellow 90%),
-    url(/static/img/paper-light.jpg);
+    url(/static/img/paper-light-light.jpg);*/
+    background-color: rgb(255 200 0 / 5%);
 	background-position: center center;
 	background-size: cover;
-  	background-blend-mode: screen, difference, lighten;
-
+  	position: relative;
 }
-
-body.trees {
-	background-image: url(/static/img/bushes-dots.png), url(/static/img/bushes-front.png), url(/static/img/bushes-back.png);
-	background-position: center bottom;
-	background-size: cover;
-	background-color: var(--bluesky);
-	display: grid;
-	height: 100vh;
-	grid-template-rows: auto 1fr auto;
-	text-align: center;
-}
-
-.night body { 
-	background: #000; 
-}
-
 
 #wrapper {
-	width:  100%;
+	width:100%;
 }
 
 #house { 
 	height: 80vh; 
 	overflow: visible;
-}
-
-main {
-	max-width: 40em;
 }
 
 a[href],
@@ -83,8 +63,20 @@ main {
 	padding: 0 1em 2em;
 }
 
+footer {
+	background-color: black;
+	color: whitesmoke;
+	font-family: sans-serif;
+	margin-top:  2em;
+	padding:  3em;
+	text-align:  center;
+}
+
 header {
 	background-color: white;
+	display: flex;
+	justify-content: space-between;
+	margin-bottom:  2em;
 	padding:  1em;
 	text-align:  center;
 }
@@ -93,7 +85,7 @@ header {
 header > em {
 	color: var(--title);
 	display: block;
-	font-family: "Playfair Display", serif;
+	font-family: 'Playfair Display', sans-serif;
 	font-size: 2em;
 	font-weight: bold;
 	font-style: normal;
@@ -102,6 +94,7 @@ header > em {
 
 /* Header Nav */
 header nav ul {
+	font-family:  sans-serif;
 	padding: 0;
 	list-style: none;
 }
@@ -126,6 +119,10 @@ header nav li a[href]:not(:hover) {
 
 header nav li a[data-current="current item"] {
 	background-color: white;
+}
+
+.home h1 {
+	display: none;
 }
 
 /* Contact Form */
@@ -160,6 +157,7 @@ button {
 	cursor: pointer;
 }
 
+
 @media screen and (min-width:768px) {
 	:root {
 		font-size: 1.1rem;
@@ -168,12 +166,54 @@ button {
 	main {
 		margin-left: auto;
 		margin-right: auto;
-		height: 100vh;
-		overflow: hidden;
-		width: 100vw;
+		max-width: 60vw;
 	}
 
 	.wrapper {
 		max-width: 75vw;
 	}
+
+	/***** FLEX UTILITIES *****/
+
+	.flex {
+		display: flex;
+	}
+
+	.flex-wrap {
+		flex-wrap: wrap;
+	}
+
+	.align-items-center {
+		align-items: center;
+	}
+
+	.row-reverse {
+		flex-direction: row-reverse;
+	}
+
+	.space-around { 
+		justify-content: space-around; 
+	}
+
+	.space-between { 
+		justify-content: space-between; 
+	}
+}
+
+
+/***** TREES *****/
+
+body.trees {
+	background-image: url(/static/img/bushes-dots.png), url(/static/img/bushes-front.png), url(/static/img/bushes-back.png);
+	background-position: center bottom;
+	background-size: cover;
+	background-color: var(--bluesky);
+	display: grid;
+	height: 100vh;
+	grid-template-rows: auto 1fr auto;
+	text-align: center;
+}
+
+.night body { 
+	background: #000; 
 }

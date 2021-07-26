@@ -5,8 +5,6 @@
 				<a href="{{ post.url | url }}">
 					{% if post.data.title %}
 						{{ post.data.title }}
-					{% else %}
-						Untitled
 					{% endif %}
 				</a>
 			</h3>
@@ -14,22 +12,15 @@
 				<p>
 					{{ post.data.summary }}
 				</p>
+					{% if post.data.image %}
+						{{ post.data.image }}
+					{% endif %}
 			{% endif %}
 			<p>
 				<time datetime="{{ post.date | machineDate }}">
 					<small>{{ post.date | readableDate }} by <a href="/authors/{{ post.data.author | slug }}/">{{ post.data.author }}</a></small>
 				</time>
 			</p>
-			{% if post.data.tags %}
-				<p>
-					{% for tag in post.data.tags %}
-		  			{%- if tag != "post" -%}
-		  				{% set tagUrl %}/tags/{{ tag }}/{% endset %}
-		  			<a href="{{ tagUrl | url }}" rel="tag">{{ tag }}</a>
-		  			{%- endif -%}
-					{% endfor %}
-				</p>
-			{% endif %}
 		</article>
 	{% endfor %}
 </section>
@@ -37,17 +28,17 @@
 <!-- Pagination links -->
 <div>
   {% if pagination.previousPageHref %}
-    <a href="{{ pagination.previousPageHref }}" class="page-numbers">Back to the future.</a>
+    <a href="{{ pagination.previousPageHref }}" class="page-numbers">Newer posts.</a>
   {% else %}
-    <span class="page-numbers">You've reached the present.</span>
+    <span class="page-numbers"></span>
   {% endif %}
   <span>
     Page {{ pagination.pageNumber + 1 }} of {{ pagination.links | length  }}.
   </span>
   {% if pagination.nextPageHref %}
-    <a href="{{ pagination.nextPageHref }}" class="page-numbers">Forward to the past.</a>
+    <a href="{{ pagination.nextPageHref }}" class="page-numbers">Older posts.</a>
   {% else %}
-    <span class="page-numbers">You've reached the beginning.</span>
+    <span class="page-numbers"></span>
   {% endif %}
   <ul class="pagination">
   {%- for pageEntry in pagination.pages %}

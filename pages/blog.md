@@ -1,7 +1,7 @@
 ---
 layout: layouts/blog.njk
 title: News
-date: 2020-08-08
+date: 2021-07-26
 permalink: "/news/{% if pagination.pageNumber > 0 %}{{ pagination.pageNumber + 1 }}/{% endif %}index.html"
 pagination:
   data: collections.post

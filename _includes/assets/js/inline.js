@@ -58,7 +58,7 @@ $(document).ready(function() {
     }
   }
 
-  $('#buttonPrevious').on('click', function(){
+  $('#buttonLeft').on('click', function(){
     $(images[currentImage]).stop().removeClass('fadedIn');
     console.log($(images[currentImage]));
     decreaseImage();
@@ -67,7 +67,7 @@ $(document).ready(function() {
     altText = $(images[currentImage]).attr("alt");
     $('#caption').html(altText);
   }); 
-  $('#buttonNext').on('click', function(){
+  $('#buttonRight').on('click', function(){
     $(images[currentImage]).stop().removeClass('fadedIn');
     console.log($(images[currentImage]));
     increaseImage();
