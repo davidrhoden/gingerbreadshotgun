@@ -3,9 +3,7 @@ layout: layouts/home.njk
 title: The Original New Orleans Shotgun Gingerbread House
 date: 2021-07-24T00:00:00.000Z
 permalink: /house.html
-eleventyNavigation:
-  key: House
-  order: 5
+
 ---
 
 <div id="wrapper">

@@ -36,6 +36,10 @@ body {
   	position: relative;
 }
 
+p {
+	line-height: 1.1;
+}
+
 #wrapper {
 	width:100%;
 }
@@ -119,6 +123,10 @@ header nav li a[href]:not(:hover) {
 
 header nav li a[data-current="current item"] {
 	background-color: white;
+}
+
+h1 {
+	font-family: 'Montserrat', sans-serif;
 }
 
 .home h1 {

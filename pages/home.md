@@ -8,7 +8,6 @@ eleventyNavigation:
   order: 0
  
 ---
-here's some test text. Where does it go?
 
 <div class="flex space-around align-items-center">
 
