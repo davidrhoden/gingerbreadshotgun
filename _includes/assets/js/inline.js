@@ -29,8 +29,6 @@ gsap.registerPlugin(CSSRulePlugin, ScrollTrigger);
 	console.log(st.animation); // tween
 });
 
-
-
 $(document).ready(function() {
   
   var currentImage = 0;
@@ -75,6 +73,12 @@ $(document).ready(function() {
     $(images[currentImage]).stop().addClass('fadedIn');
     altText = $(images[currentImage]).attr("alt");
     $('#caption').html(altText);
+  });
+
+  var $hamburger = $(".hamburger");
+  $hamburger.on("click", function(e) {
+    $hamburger.toggleClass("is-active");
+    $("nav").toggleClass("is-active");
   });
 
 });

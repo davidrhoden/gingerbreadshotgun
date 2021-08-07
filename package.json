@@ -22,7 +22,7 @@
   },
   "homepage": "https://gingerbreadshotgun.netlify.app",
   "devDependencies": {
-    "@11ty/eleventy": "^0.11.0-beta.3",
+    "@11ty/eleventy": "^0.12.1",
     "luxon": "^1.22.2",
     "markdown-it": "^10.0.0",
     "markdown-it-anchor": "^5.2.7"
@@ -32,7 +32,7 @@
     "clean-css": "^4.2.1",
     "eleventy-plugin-seo": "^0.5.1",
     "html-minifier": "^4.0.0",
-    "netlify-cli": "^2.59.0",
+    "netlify-cli": "^2.37.0",
     "uglify-es": "^3.3.9"
   }
 }

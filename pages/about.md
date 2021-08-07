@@ -7,7 +7,7 @@ eleventyNavigation:
   order: 1
 ---
 
-The National Register of Historic Places named New Orleans home to the largest and most diverse collection of shotgun homes in the U.S. Decorate your own colorful shotgun house and share a NOLA original with the world! <i>Don’t forget to like, share, and check out Facebook for inspiration!</i>
+The National Register of Historic Places named New Orleans home to the largest and most diverse collection of shotgun homes in the U.S.
 
 New Orleans may be the only city where these modest homes are revered by locals, debated by scholars, compared by owners, painted by artists, and sung about by musicians. We devise complex color schemes to enhance their architectural features, install porch swings to capitalize on their enticing galleries, debate <i>ad infinitum</i> the relative merits of a single shotgun versus a double, and argue whether or not sidehalls and camelbacks really count as shotgun houses.
 
@@ -20,3 +20,9 @@ When shotgun houses appeared in the 1830s, the Greek Revival style was in vogue,
 According to the National Register of Historic Places, New Orleans has the greatest number and most diverse collection of shotgun houses still standing in the United States. But we don't need the National Register to tell us that: All we need to do is stand in the street and take a look around.  
 
 — R. STEPHANIE BRUNO, ARCHITECTURAL HISTORIAN
+
+<div class="section">
+
+<h2>Decorate your own colorful shotgun house and share a NOLA original with the world! <i>Don’t forget to like, share, and check out Facebook for inspiration!</i></h2>
+
+</div>

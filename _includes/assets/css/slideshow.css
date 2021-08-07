@@ -6,8 +6,9 @@
   grid-auto-flow: row;
   grid-template-areas:
     "buttonLeft viewportCenter buttonRight";
-  width: 100%;
-  height: 90vh;
+  height:  320px;
+  width: 360px;
+  overflow: hidden;
 }
 
 #buttonLeft { grid-area: buttonLeft; }
@@ -15,19 +16,21 @@
 .viewportCenter { 
 	grid-area: viewportCenter;
 	position: relative; 
+	height: 30vh;
 }
 
 #buttonRight { grid-area: buttonRight; }
 
 
 #viewport p, #viewport li {
-	height: 65vh;
+	height: 30vh;
 	text-align: center;
 	width: 100%;
 }
 
 #viewport div p img, #viewport div li img {
 	border-radius:  2em;
+	height:  320px;
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -45,11 +48,11 @@
 	background-color: transparent;
 	border-width: 0px;
 	display: grid;
-	height: 100%;
+	height:  320px;
+	line-height: 320px;
 	padding: 0;
-    width: 100%;
-    line-height: 100vh;
-  	white-space: nowrap;
+  width: 100%;
+  white-space: nowrap;
 }
 
 #caption {
@@ -59,7 +62,6 @@
 @media screen and (min-width:768px) {
 
 	#viewport {
-		height: 70vh;
 	}
 
 	#viewport p img, #viewport li img{ 
@@ -75,6 +77,6 @@
 		vertical-align: middle;
 		height: 100%;
 		padding: 0;
-	    width: 100%;
+	   width: 100%;
 	}
 }

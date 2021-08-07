@@ -1,6 +1,6 @@
 ---
 layout: layouts/page.njk
-title: Home
+title: The Original New Orleans Shotgun Gingerbread House
 date: 2021-07-24T00:00:00.000Z
 permalink: /
 eleventyNavigation:
@@ -9,17 +9,27 @@ eleventyNavigation:
  
 ---
 
-<div class="flex space-around align-items-center">
-
-![](/static/img/PDART-box-home.png)
+<div class="section two-column-grid intro">
+    <div class="left-side">
 
 ![](/static/img/example-house-large.png)
 </div>
+    <div class="right-side">
 
-<div class="product-intro">
-    Introducing the new Original New Orleans Shotgun Gingerbread House kit! Now you can create your own gingerbread house in the style of an authentic New Orleans Shotgun house. It's simple and fun, and you can decorate your house any way youo like. Makes a great gift.
+Introducing the Original New Orleans Shotgun Gingerbread House kit! 
+</div>
 </div>
 
+
+<div class="section two-column-grid">
+
+Now you can create your own gingerbread house in the style of an authentic New Orleans Shotgun house. It's simple and fun, and you can decorate your house any way you like. Makes a great gift.
+
+![](/static/img/PDART-box-home.png)
+
+</div>
+
+<div class="section two-column-grid psych">
 <div id="viewport">
     <button id="buttonLeft">&#10094;</button>
     <div class="viewportCenter">
@@ -54,29 +64,33 @@ eleventyNavigation:
 
 ![](/static/img/PDART-inspo-15.jpg)
 
+
 </div>
     <button id="buttonRight">&#10095;</button>
-</div>
-<div class="flex row-reverse space-between">
-    <div id="caption"></div>
-</div>
-
-<!-- Begin MailChimp Signup Form -->
-  <div class="smallsignupform">
-  <div id="mc_embed_signup">
-    <form action="//davidrhoden.us11.list-manage.com/subscribe/post?u=c4a57f53ef1f466f08486a969&amp;id=e439d103c2" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-        <div id="mc_embed_signup_scroll">
-          <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
-          <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
-          <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-          <div style="position: absolute; left: -5000px;"><input type="text" name="b_c4a57f53ef1f466f08486a969_e439d103c2" tabindex="-1" value=""></div>
-
-      </div> 
-  </form>
-  <div class="email-signup">
-    <p>Sign up to receive e-mail updates about The Original New Orleans Shoutgun Gingerbread House and other Pop d'Art products. You can unsubscribe anytime and your e-mail won't be shared.</p>
-</div>
-</div>
+    </div>
+    <div class="flex row-reverse space-between">
+        <div id="caption"></div>
+    </div>
 </div>
 
-<!--End mc_embed_signup-->
+<div class="section email-signup">
+    <div class=" two-column-grid border">
+    <!-- Begin MailChimp Signup Form -->
+      <div class="smallsignupform">
+        <h2>Let's Be Friends!</h2>
+        <p>Sign up to receive e-mail updates about The Original New Orleans Shotgun Gingerbread House and other Pop d'Art products. You can unsubscribe anytime and your e-mail won't be shared.</p>
+      </div>
+      <div id="mc_embed_signup">
+        <form action="//davidrhoden.us11.list-manage.com/subscribe/post?u=c4a57f53ef1f466f08486a969&amp;id=e439d103c2" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+            <div id="mc_embed_signup_scroll">
+              <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+              <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
+              <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+              <div style="position: absolute; left: -5000px;"><input type="text" name="b_c4a57f53ef1f466f08486a969_e439d103c2" tabindex="-1" value="">
+              </div>
+          </div> 
+        </form>
+        </div>
+    <!--End mc_embed_signup-->
+    </div>
+</div>

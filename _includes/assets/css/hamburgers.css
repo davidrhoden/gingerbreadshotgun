@@ -5,6 +5,25 @@
  * @link https://github.com/jonsuh/hamburgers
  */
 
+header nav {
+  display: none;
+}
+
+header nav.is-active {
+    display: block;
+    position: absolute;
+    margin:  -1em 0 0 -1em;
+    height: 100%;
+    width: 100%;
+    background: yellow;
+}
+
+header nav.is-active li {
+  display: block;
+  font-family: sans-serif;
+  padding: 1em;
+}
+
 button.hamburger {
   border: 0px solid var(--white);
   background-color: var(--white);
@@ -34,7 +53,7 @@ button.hamburger {
   .hamburger.is-active .hamburger-inner,
   .hamburger.is-active .hamburger-inner::before,
   .hamburger.is-active .hamburger-inner::after {
-    background-color: var(--orangered); 
+    background-color: var(--midblue); 
 }
 
 .hamburger:focus {
@@ -56,7 +75,7 @@ button.hamburger {
 .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
     width: 40px;
     height: 4px;
-    background-color: var(--blue);
+    background-color: var(--bluesky);
     border-radius: 4px;
     position: absolute;
     transition-property: transform;
@@ -102,4 +121,10 @@ button.hamburger {
     bottom: 0;
     transform: rotate(-90deg);
     transition: bottom 0.075s ease, transform 0.075s 0.12s cubic-bezier(0.215, 0.61, 0.355, 1); 
+}
+
+@media screen and (min-width:768px) {
+    header nav {
+        display: block;
+    }
 }

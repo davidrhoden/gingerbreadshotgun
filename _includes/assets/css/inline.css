@@ -1,10 +1,18 @@
-/*@font-face {
-    font-family: 'quentincaps';
-    src: url('/static/fonts/quentincaps/quentincaps-webfont.woff2') format('woff2'),
-         url('/static/fonts/quentincaps/quentincaps-webfont.woff') format('woff');
+@font-face {
+    font-family: 'DomaineDisplay';
+    src: url('/static/fonts/Domaine/TestDomaineDisplay/test-domaine-display-bold.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
-}*/
+}
+
+@font-face {
+    font-family: 'Silverfake';
+    src: url('/static/fonts/Silverfake-Webfont/silverfakeregular-webfont.woff2') format('woff2'),
+         url('/static/fonts/Silverfake-Webfont/silverfakeregular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 
 :root {
 	--primary: black;
@@ -12,6 +20,8 @@
 	--bluesky:rgba(14,137,210,.35);
 	--midblue: rgba(14,137,210,1);
 	--title: #d8e433;
+	--darkyellow: #f2d87f;
+	--text: rgb(0 0 0 / 59%)
 }
 
 *, *:before, *:after {
@@ -26,35 +36,27 @@ body {
 }
 
 body {
-/*	background: 
-	linear-gradient(purple 0%, red 90%), 
-    linear-gradient(to right, purple 0%, yellow 90%),
-    url(/static/img/paper-light-light.jpg);*/
-    background-color: rgb(255 200 0 / 5%);
-	background-position: center center;
-	background-size: cover;
+	color: var(--text);
+	overflow: hidden;
   	position: relative;
 }
 
 p {
-	line-height: 1.1;
+	font-size: 1.1em;
+	line-height: 1.5;
 }
 
 #wrapper {
 	width:100%;
 }
 
-#house { 
-	height: 80vh; 
-	overflow: visible;
+.about main {
+	padding: 1em;
 }
 
 a[href],
 a[href]:visited {
 	color: var(--primary);
-}
-
-a[href]:not(:hover) {
 	text-decoration: none;
 }
 
@@ -63,15 +65,10 @@ img {
 	height: auto;
 }
 
-main {
-	padding: 0 1em 2em;
-}
-
 footer {
 	background-color: black;
 	color: whitesmoke;
 	font-family: sans-serif;
-	margin-top:  2em;
 	padding:  3em;
 	text-align:  center;
 }
@@ -80,17 +77,16 @@ header {
 	background-color: white;
 	display: flex;
 	justify-content: space-between;
-	margin-bottom:  2em;
 	padding:  1em;
 	text-align:  center;
 }
 
 /* Header Logo (style as h2) */
-header > em {
+header em {
 	color: var(--title);
 	display: block;
-	font-family: 'Playfair Display', sans-serif;
-	font-size: 2em;
+	font-family: 'DomaineDisplay', sans-serif;
+	font-size: 1em;
 	font-weight: bold;
 	font-style: normal;
 	text-shadow: 1px 1px var(--midblue);
@@ -98,7 +94,7 @@ header > em {
 
 /* Header Nav */
 header nav ul {
-	font-family:  sans-serif;
+	font-family:  "DomaineDisplay", serif;
 	padding: 0;
 	list-style: none;
 }
@@ -126,11 +122,55 @@ header nav li a[data-current="current item"] {
 }
 
 h1 {
-	font-family: 'Montserrat', sans-serif;
+	font-family: "DomaineDisplay", sans-serif;
 }
 
 .home h1 {
 	display: none;
+}
+
+.section.intro {
+	background: hotpink;
+	color:  white;
+	font-family: "Silverfake", sans-serif;
+}
+
+.section.intro p {
+	font-size: 1.8em; 
+	line-height:  1;
+	text-align: center;
+}
+
+.section.psych {
+	background: 
+	linear-gradient(purple 0%, red 90%), 
+    linear-gradient(to right, purple 0%, yellow 90%),
+    url(/static/img/paper-light.jpg);
+	background-position: center center;
+	background-size: cover;
+  	background-blend-mode: screen, difference, lighten;
+}
+
+
+.section.email-signup {
+	background: palegoldenrod;
+	padding:  1em;
+}
+
+.section.email-signup h2 {
+	color: orangered;
+	font-family: "Silverfake", sans-serif;
+	font-size: 1.8em; 
+	line-height: 1;
+	margin: 0;
+	text-align: center;
+}
+
+.section.email-signup .border {
+	border: 2px dotted goldenrod;
+	height: 100%;
+	padding:  0 2em;
+	width: 100%;
 }
 
 /* Contact Form */
@@ -155,14 +195,31 @@ button {
 
 input,
 textarea {
-	border: 1px solid black;
+	border: 0px solid black;
 }
 
-button {
-	border: 1px solid var(--primary);
-	background-color: var(--primary);
+button, .button {
+	border: 0px solid var(--primary);
+	background-color: var(--title);
 	color: var(--secondary);
 	cursor: pointer;
+	font-family: "Silverfake", sans-serif;
+}
+
+.smallsignupform p {
+	font-family: "DomaineDisplay", serif;
+}
+
+.mobile-menu {
+	display: flex;
+	float: right;
+	padding: 6px 0;
+}
+
+.section {
+	font-family: "DomaineDisplay", serif;
+	overflow: hidden;
+	padding: 2em;
 }
 
 
@@ -177,14 +234,48 @@ button {
 		max-width: 60vw;
 	}
 
+	header em {
+		font-size: 2em;
+	}
+
 	.wrapper {
 		max-width: 75vw;
+	}
+
+	.section {
+		font-family: "DomaineDisplay", serif;
+		margin-left: calc(50% - 50vw);
+   	    margin-right: calc(50% - 50vw);
+   	    overflow: hidden;
+		padding: 3em 12.5em;
+	}
+
+	.two-column-grid {
+	  display: grid; 
+	  grid-template-columns: 1fr 1fr; 
+	  grid-template-rows: 1fr; 
+	  gap: 0px 1em; 
+	  grid-template-areas: 
+	    "left-side right-side"; 
+	  align-items: center; 
+	}
+
+	.left-side { grid-area: left-side; }
+	.right-side { grid-area: right-side; }
+
+	.mobile-menu {
+		display: none;
 	}
 
 	/***** FLEX UTILITIES *****/
 
 	.flex {
 		display: flex;
+	}
+
+	.flex p {
+		flex-basis: 0;
+		flex-grow: 1;
 	}
 
 	.flex-wrap {
@@ -223,5 +314,5 @@ body.trees {
 }
 
 .night body { 
-	background: #000; 
+	/*background: #000; */
 }
