@@ -8,7 +8,7 @@
     "buttonLeft viewportCenter buttonRight";
   height:  320px;
   width: 360px;
-  overflow: hidden;
+  /*overflow: hidden;*/
 }
 
 #buttonLeft { grid-area: buttonLeft; }
@@ -29,7 +29,9 @@
 }
 
 #viewport div p img, #viewport div li img {
-	border-radius:  2em;
+	/*border-radius:  2em;*/
+	border:  1em solid white;
+	box-shadow: 3px 3px 5px 1px rgba(0,0,0,0.25);
 	height:  320px;
 	position: absolute;
 	top: 0;

@@ -9,4 +9,8 @@ eleventyNavigation:
   order: 3
 ---
 
+<div class="section email-signup">
+
 To be contacted regarding the availability and nearest retail location of New Orleans Original Shotgun Gingerbread Houses prior to November 15, 2021, please complete the following form:
+
+</div>

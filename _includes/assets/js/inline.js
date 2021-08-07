@@ -32,12 +32,14 @@ gsap.registerPlugin(CSSRulePlugin, ScrollTrigger);
 $(document).ready(function() {
   
   var currentImage = 0;
+  var number = Math.floor((Math.random() * 5) + 0);
   var images = $('#viewport img').get();
   var totalImages = images.length;
   var firstImage = $('#viewport img:first');
   console.log("firstImage: ", firstImage);
   console.log("currentImageindex: ", currentImage);
   console.log("images[currentImage]: ",images[currentImage]);
+  console.log("Rotation: ", number);
   var altText = $(firstImage).attr("alt");
   console.log(altText);
   firstImage.addClass("fadedIn");
@@ -56,11 +58,20 @@ $(document).ready(function() {
     }
   }
 
+  function rotateImage() {
+      function randomNumber(min, max) {
+        return Math.random() * (max - min) + min;
+      }
+    var number = randomNumber(-5, 5);
+    $("#viewport div p img").css("transform", "rotate(" + number + "deg)");
+  }
+
   $('#buttonLeft').on('click', function(){
     $(images[currentImage]).stop().removeClass('fadedIn');
     console.log($(images[currentImage]));
     decreaseImage();
-      console.log(currentImage);
+    rotateImage();
+      console.log(currentImage, " Number ", number);
     $(images[currentImage]).stop().addClass('fadedIn');
     altText = $(images[currentImage]).attr("alt");
     $('#caption').html(altText);
@@ -69,7 +80,8 @@ $(document).ready(function() {
     $(images[currentImage]).stop().removeClass('fadedIn');
     console.log($(images[currentImage]));
     increaseImage();
-      console.log(currentImage);
+    rotateImage();
+      console.log(currentImage, " Number ", number);
     $(images[currentImage]).stop().addClass('fadedIn');
     altText = $(images[currentImage]).attr("alt");
     $('#caption').html(altText);

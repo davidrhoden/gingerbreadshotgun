@@ -30,9 +30,10 @@ Now you can create your own gingerbread house in the style of an authentic New O
 </div>
 
 <div class="section two-column-grid psych">
-<div id="viewport">
-    <button id="buttonLeft">&#10094;</button>
-    <div class="viewportCenter">
+    <div id=viewportContainer>
+    <div id="viewport">
+        <button id="buttonLeft">&#10094;</button>
+            <div class="viewportCenter">
 
 ![](/static/img/PDART-inspo-01.jpg)
 
@@ -65,6 +66,7 @@ Now you can create your own gingerbread house in the style of an authentic New O
 ![](/static/img/PDART-inspo-15.jpg)
 
 
+
 </div>
     <button id="buttonRight">&#10095;</button>
     </div>
@@ -72,6 +74,14 @@ Now you can create your own gingerbread house in the style of an authentic New O
         <div id="caption"></div>
     </div>
 </div>
+<div>
+    <div class="instagram">
+        <h2>Join us on Instagram</h2>
+        <p>Tag your Instagram photos with #gingerbreadshotgun!</p>
+    </div>
+</div>
+</div>
+
 
 <div class="section email-signup">
     <div class=" two-column-grid border">

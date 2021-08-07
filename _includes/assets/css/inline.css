@@ -21,7 +21,8 @@
 	--midblue: rgba(14,137,210,1);
 	--title: #d8e433;
 	--darkyellow: #f2d87f;
-	--text: rgb(0 0 0 / 59%)
+	--text: rgb(0 0 0 / 59%);
+	--white:  whitesmoke;
 }
 
 *, *:before, *:after {
@@ -37,7 +38,7 @@ body {
 
 body {
 	color: var(--text);
-	overflow: hidden;
+	overflow-x: hidden;
   	position: relative;
 }
 
@@ -109,8 +110,10 @@ header nav li {
 }
 
 header nav li a {
-	padding: .25em .5em;
 	border-radius: .25em;
+	font-size:  2em;
+	padding: .25em .5em;
+	
 }
 
 header nav li a[href]:not(:hover) {
@@ -151,7 +154,6 @@ h1 {
   	background-blend-mode: screen, difference, lighten;
 }
 
-
 .section.email-signup {
 	background: palegoldenrod;
 	padding:  1em;
@@ -172,6 +174,16 @@ h1 {
 	padding:  0 2em;
 	width: 100%;
 }
+
+.instagram {
+	color: var(--white);
+	font-size:  2em;
+}
+
+.instagram h2 {
+	margin:  0;
+}
+
 
 /* Contact Form */
 form {
@@ -218,8 +230,10 @@ button, .button {
 
 .section {
 	font-family: "DomaineDisplay", serif;
-	overflow: hidden;
-	padding: 2em;
+	margin-left: calc(50% - 50vw);
+	    margin-right: calc(50% - 50vw);
+	    overflow: hidden;
+	padding: 3em 12.5em;
 }
 
 
@@ -240,14 +254,6 @@ button, .button {
 
 	.wrapper {
 		max-width: 75vw;
-	}
-
-	.section {
-		font-family: "DomaineDisplay", serif;
-		margin-left: calc(50% - 50vw);
-   	    margin-right: calc(50% - 50vw);
-   	    overflow: hidden;
-		padding: 3em 12.5em;
 	}
 
 	.two-column-grid {
