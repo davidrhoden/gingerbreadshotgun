@@ -13,12 +13,12 @@
     font-style: normal;
 }
 
-
 :root {
 	--primary: black;
 	--secondary: orange;
 	--bluesky:rgba(14,137,210,.35);
 	--midblue: rgba(14,137,210,1);
+	--orangered: orangered;
 	--title: #d8e433;
 	--darkyellow: #f2d87f;
 	--text: rgb(0 0 0 / 59%);
@@ -132,6 +132,14 @@ h1 {
 	display: none;
 }
 
+.section {
+	font-family: "DomaineDisplay", serif;
+	margin-left: calc(50% - 50vw);
+	margin-right: calc(50% - 50vw);
+	overflow: hidden;
+	padding: 1em;
+}
+
 .section.intro {
 	background: hotpink;
 	color:  white;
@@ -177,13 +185,30 @@ h1 {
 
 .instagram {
 	color: var(--white);
-	font-size:  2em;
+	font-size:  1em;
+	text-align: center;
 }
 
 .instagram h2 {
-	margin:  0;
+	margin: 0;
+	text-align: center;
 }
 
+.instagram h2 a {
+	background: var(--white);
+	border-radius: .5rem;
+	color: var(--midblue);
+	display: block;
+	font-size: .75em;
+	margin: .5em 0 -.5em 0;
+	padding:  .5em;
+	transition: .5s background, color ease;
+}
+
+.instagram h2 a:hover {
+	background: var(--bluesky);
+	color: var(--white);
+}
 
 /* Contact Form */
 form {
@@ -212,7 +237,7 @@ textarea {
 
 button, .button {
 	border: 0px solid var(--primary);
-	background-color: var(--title);
+	background-color: var(--orangered);
 	color: var(--secondary);
 	cursor: pointer;
 	font-family: "Silverfake", sans-serif;
@@ -228,15 +253,6 @@ button, .button {
 	padding: 6px 0;
 }
 
-.section {
-	font-family: "DomaineDisplay", serif;
-	margin-left: calc(50% - 50vw);
-	    margin-right: calc(50% - 50vw);
-	    overflow: hidden;
-	padding: 3em 12.5em;
-}
-
-
 @media screen and (min-width:768px) {
 	:root {
 		font-size: 1.1rem;
@@ -248,12 +264,25 @@ button, .button {
 		max-width: 60vw;
 	}
 
+	header nav {
+        min-width: 20em;
+    }
+
 	header em {
 		font-size: 2em;
 	}
 
+	header nav li a {
+	    font-size: 1em;
+	    padding: .25em .5em;
+	}
+
 	.wrapper {
 		max-width: 75vw;
+	}
+
+	.section {
+		padding: 3em 10%;
 	}
 
 	.two-column-grid {
@@ -273,38 +302,45 @@ button, .button {
 		display: none;
 	}
 
-	/***** FLEX UTILITIES *****/
-
-	.flex {
-		display: flex;
-	}
-
-	.flex p {
-		flex-basis: 0;
-		flex-grow: 1;
-	}
-
-	.flex-wrap {
-		flex-wrap: wrap;
-	}
-
-	.align-items-center {
-		align-items: center;
-	}
-
-	.row-reverse {
-		flex-direction: row-reverse;
-	}
-
-	.space-around { 
-		justify-content: space-around; 
-	}
-
-	.space-between { 
-		justify-content: space-between; 
+	.instagram {
+		font-size: 2em;
 	}
 }
 
+/***** FLEX UTILITIES *****/
+
+.flex {
+	display: flex;
+}
+
+.flex p {
+	flex-basis: 0;
+	flex-grow: 1;
+}
+
+.flex-wrap {
+	flex-wrap: wrap;
+}
+
+.align-items-center {
+	align-items: center;
+}
+
+.row-reverse {
+	flex-direction: row-reverse;
+}
+
+.space-around { 
+	justify-content: space-around; 
+}
+
+.space-between { 
+	justify-content: space-between; 
+}
+
+.full-width {
+	width: 100%;
+}
 
 /***** TREES *****/
 

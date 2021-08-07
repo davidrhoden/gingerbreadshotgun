@@ -5,8 +5,10 @@
 	<body class="{% if pageType %}{{ pageType }}{% endif %} {{ page.fileSlug }} {{ pageClasses }}">
 
         <header>
-            <div class="flex">
-                <a class="main-link" href="{{ '/' | url }}"><em>{{ metadata.title }}</em></a>
+            <div class="flex space-between full-width">
+                <div class="main-link-container">
+                    <a class="main-link" href="{{ '/' | url }}"><em>{{ metadata.title }}</em></a>
+                </div>
                 <div class="mobile-menu">
                     <button class="hamburger hamburger--squeeze" aria-label="Menu" aria-controls="primary-menu" aria-expanded="false" type="button">
                         <span class="hamburger-box">

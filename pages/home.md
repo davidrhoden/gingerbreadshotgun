@@ -30,7 +30,7 @@ Now you can create your own gingerbread house in the style of an authentic New O
 </div>
 
 <div class="section two-column-grid psych">
-    <div id=viewportContainer>
+    <div id=viewport-container>
     <div id="viewport">
         <button id="buttonLeft">&#10094;</button>
             <div class="viewportCenter">
@@ -76,8 +76,8 @@ Now you can create your own gingerbread house in the style of an authentic New O
 </div>
 <div>
     <div class="instagram">
-        <h2>Join us on Instagram</h2>
-        <p>Tag your Instagram photos with #gingerbreadshotgun!</p>
+        <h2>Join us on Instagram <a href="https://instagram.com/thedavidrhoden">@shotgungingerbreadhouse</a></h2>
+        <p>Tag your Instagram photos with <b>#gingerbreadshotgun!</b></p>
     </div>
 </div>
 </div>

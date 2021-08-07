@@ -1,4 +1,12 @@
-#viewport{
+
+#viewport-container {
+    display: grid;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+#viewport {
   display: grid;
   grid-template-columns: 0.2fr 2.6fr 0.2fr;
   grid-template-rows: 1fr;
@@ -6,9 +14,8 @@
   grid-auto-flow: row;
   grid-template-areas:
     "buttonLeft viewportCenter buttonRight";
-  height:  320px;
-  width: 360px;
-  /*overflow: hidden;*/
+  height: 74vw;
+  width:calc(100vw - 2em);
 }
 
 #buttonLeft { grid-area: buttonLeft; }
@@ -32,7 +39,7 @@
 	/*border-radius:  2em;*/
 	border:  1em solid white;
 	box-shadow: 3px 3px 5px 1px rgba(0,0,0,0.25);
-	height:  320px;
+	height:  74vw;
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -50,8 +57,9 @@
 	background-color: transparent;
 	border-width: 0px;
 	display: grid;
-	height:  320px;
-	line-height: 320px;
+	font-size:  2em;
+	height:  74vw;
+	line-height: 74vw;
 	padding: 0;
   width: 100%;
   white-space: nowrap;
@@ -64,12 +72,15 @@
 @media screen and (min-width:768px) {
 
 	#viewport {
+		height: 320px;
+  	width: 360px;
 	}
 
-	#viewport p img, #viewport li img{ 
+	#viewport div p img, #viewport div li img{ 
 		position: absolute;
 		top: 0;
 		left: 0;
+		height:  320px;
 		max-width: 100%;
 		width: auto;
 	}
@@ -77,8 +88,9 @@
 	#viewport button {
 		display: grid;
 		vertical-align: middle;
-		height: 100%;
+		height:  320px;
+		line-height: 320px;
 		padding: 0;
-	   width: 100%;
+	  width: 100%;
 	}
 }
