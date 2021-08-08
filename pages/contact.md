@@ -13,7 +13,7 @@ eleventyNavigation:
 
 We can't wait to get the new Original Gingerbread Shotgun House kits into your hands and see what you build with them!
 
-If you'd like to be notified when the kits become available, please fill out the form below.
+If you'd like to be notified when the kits become available, or if you just have questions, please fill out the form below.
 
 Retailers: we'd love to hear from you! Please fill out the form and we'll ket you know when the kits are available for pre-orders.
 
