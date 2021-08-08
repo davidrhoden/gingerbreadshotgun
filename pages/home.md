@@ -30,9 +30,9 @@ Now you can create your own gingerbread house in the style of an authentic New O
 </div>
 
 <div class="section two-column-grid psych">
-    <div id=viewport-container>
-    <div id="viewport">
-        <button id="buttonLeft">&#10094;</button>
+    <div class="viewport-container">
+    <div class="viewport">
+        <button class="buttonLeft">&#10094;</button>
             <div class="viewportCenter">
 
 ![](/static/img/PDART-inspo-01.jpg)
@@ -68,7 +68,7 @@ Now you can create your own gingerbread house in the style of an authentic New O
 
 
 </div>
-    <button id="buttonRight">&#10095;</button>
+    <button class="buttonRight">&#10095;</button>
     </div>
     <div class="flex row-reverse space-between">
         <div id="caption"></div>
@@ -94,9 +94,9 @@ Now you can create your own gingerbread house in the style of an authentic New O
 </div>
 
 <div class="section two-column-grid facebook-blue">
-    <div id=viewport-container>
-    <div id="viewport2">
-        <button id="buttonLeft2">&#10094;</button>
+    <div class=viewport-container>
+    <div class="viewport2">
+        <button class="buttonLeft">&#10094;</button>
             <div class="viewportCenter">
 
 ![](/static/img/ogden-museum-setup.jpg)
@@ -105,7 +105,7 @@ Now you can create your own gingerbread house in the style of an authentic New O
 
 
 </div>
-    <button id="buttonRight2">&#10095;</button>
+    <button class="buttonRight">&#10095;</button>
     </div>
     <div class="flex row-reverse space-between">
         <div id="caption"></div>
@@ -114,7 +114,7 @@ Now you can create your own gingerbread house in the style of an authentic New O
 
 <div>
     <div class="instagram">
-        <h2>Share your creation on Facebook! <a href="https://www.facebook.com/NOLAShotgunGingerbreadHouse">facebook.com/NOLAShotgunGingerbreadHouse</a></h2>
+        <h2>Share your creation on Facebook! <a class="facebook-link" href="https://www.facebook.com/NOLAShotgunGingerbreadHouse">facebook.com/NOLAShotgunGingerbreadHouse</a></h2>
     </div>
 </div>
 </div>

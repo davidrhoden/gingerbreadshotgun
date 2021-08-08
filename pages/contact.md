@@ -10,14 +10,18 @@ eleventyNavigation:
 ---
 
 
+<div class="section two-column-grid">
+    <div class="left-side">
+<div class="contact-intro">
+<h1 class="show">Let&rsquo;s keep in touch!</h1>
 
-We can't wait to get the new Original Gingerbread Shotgun House kits into your hands and see what you build with them!
+We can&rsquo;t wait to get the new Original Gingerbread Shotgun House kits into your hands and see what you build with them!
 
-If you'd like to be notified when the kits become available, or if you just have questions, please fill out the form below.
+If you&rsquo;d like to be notified when the kits become available, or if you just have questions, please fill out the form below.
 
-Retailers: we'd love to hear from you! Please fill out the form and we'll ket you know when the kits are available for pre-orders.
-
-<div class="section email-signup">
+Retailers: we&rsquo;d love to hear from you! Please fill out the form and we&rsquo;ll let you know when the kits are available for pre-orders.
+</div>
+<div class="email-signup">
   <div class="border">
     <main>
     <form name="contact" method="POST" netlify>
@@ -32,3 +36,12 @@ Retailers: we'd love to hear from you! Please fill out the form and we'll ket yo
 </main>
   </div>
 </div>
+
+</div>
+<div class="right-side">
+
+![](/static/img/shauna-midcity-house.jpg)
+![](/static/img/ogden-museum-setup.jpg)
+</div>
+</div>
+

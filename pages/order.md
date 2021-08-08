@@ -9,8 +9,16 @@ eleventyNavigation:
   order: 5
 ---
 
-Unfortunately, orders aren't open yet. Fill out the form below to be on the mailing list to get advanced notice when the kits will become available.
-
+<div class="section two-column-grid">
+  <div class="left-side">
+    <img class="badge" src="/static/img/badge.svg" alt="Coming soon badge">
+    <h1 class="show">Order your Original New Orleans Gingerbread Shotgun kit today!</h1>
+Unfortunately, orders aren't open yet. Fill out the form below to be on the list to get advanced notice when the kits will become available.
+</div>
+<div class="right-side">
+<img src="/static/img/PDART-box-home.png" alt="New Orleans Gingerbread Shotgun packaging">
+</div>
+</div>
 <div class="section email-signup">
   <div class="border">
     <main>
