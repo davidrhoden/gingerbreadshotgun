@@ -7,7 +7,18 @@ eleventyNavigation:
   order: 1
 ---
 
-The National Register of Historic Places named New Orleans home to the largest and most diverse collection of shotgun homes in the U.S.
+<div class="section about-intro two-column-grid">
+  <div class="left-side">
+    <h1 class="show">About New Orleans Shotgun Houses</h1>
+If you've ever been to New Orleans, you've seen or been in a New Orleans Shotgun House. But did you know there's a reason so many houses in New Orleans are built this way? Architectural historian Stephanie Bruno explains some of the reasons behind this style of architecture, and how it has changed and adapted, yet remains one of the signature home styles in this history-filled Southern city.
+</div>
+<div class="right-side">
+</div>
+</div>
+
+<div class="essay">
+
+The National Register of Historic Places named New Orleans home to the largest and most diverse collection of shotgun houses in the U.S..
 
 New Orleans may be the only city where these modest homes are revered by locals, debated by scholars, compared by owners, painted by artists, and sung about by musicians. We devise complex color schemes to enhance their architectural features, install porch swings to capitalize on their enticing galleries, debate <i>ad infinitum</i> the relative merits of a single shotgun versus a double, and argue whether or not sidehalls and camelbacks really count as shotgun houses.
 
@@ -21,10 +32,13 @@ According to the National Register of Historic Places, New Orleans has the great
 
 — R. STEPHANIE BRUNO, ARCHITECTURAL HISTORIAN
 
+</div>
+
 <div class="section email-signup">
   <div class="border">
-
-<h3>Decorate your own colorful shotgun house and share a NOLA original with the world! <i>Don’t forget to like, share, and check out Facebook for inspiration!</i></h3>
+    <main>
+<h3>Decorate your own colorful shotgun house and share a NOLA original with the world! <i>Don’t forget to like, share, and check out <a href="https://www.facebook.com/NOLAShotgunGingerbreadHouse/">Facebook</a> for inspiration!</i></h3>
+</main>
 
   </div>
 </div>

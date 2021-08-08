@@ -21,9 +21,9 @@ Introducing the Original New Orleans Shotgun Gingerbread House kit!
 </div>
 
 
-<div class="section two-column-grid">
+<div class="section two-column-grid large-print">
 
-Now you can create your own gingerbread house in the style of an authentic New Orleans Shotgun house. It's simple and fun, and you can decorate your house any way you like. Makes a great gift.
+Now you can create your own gingerbread house in the style of an authentic New Orleans Shotgun house. It&rsquo;s simple and fun, and you can decorate your house any way you like. Makes a great gift.
 
 ![](/static/img/PDART-box-home.png)
 
@@ -74,6 +74,7 @@ Now you can create your own gingerbread house in the style of an authentic New O
         <div id="caption"></div>
     </div>
 </div>
+
 <div>
     <div class="instagram">
         <h2>Join us on Instagram <a href="https://instagram.com/thedavidrhoden">@shotgungingerbreadhouse</a></h2>
@@ -82,9 +83,59 @@ Now you can create your own gingerbread house in the style of an authentic New O
 </div>
 </div>
 
+<div class="section two-column-grid large-print">
+    <div class="left-side"> 
+        <img src="/static/img/kid-decorating-house.jpg">
+    </div>
+    <div class="right-side"> 
+        <p>It&rsquo;s a fun activity for the whole family.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.   Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+</div>
+
+<div class="section two-column-grid facebook-blue">
+    <div id=viewport-container>
+    <div id="viewport2">
+        <button id="buttonLeft2">&#10094;</button>
+            <div class="viewportCenter">
+
+![](/static/img/ogden-museum-setup.jpg)
+
+![](/static/img/shauna-midcity-house.jpg)
+
+
+</div>
+    <button id="buttonRight2">&#10095;</button>
+    </div>
+    <div class="flex row-reverse space-between">
+        <div id="caption"></div>
+    </div>
+</div>
+
+<div>
+    <div class="instagram">
+        <h2>Share your creation on Facebook! <a href="https://www.facebook.com/NOLAShotgunGingerbreadHouse">facebook.com/NOLAShotgunGingerbreadHouse</a></h2>
+    </div>
+</div>
+</div>
+
+
+<div class="section two-column-grid medium-print">
+    <div class="left-side">
+    <h2>So where can I get one?</h2>
+</div>
+    <div class="right-side">
+    <p>Sorry, the kits are not quite ready yet!</p>
+    <p>We are so excited to get this product ready for you, but there are still a few steps we have to take before the Shotgun Gingerbread houses are available to the general public.</p>
+    <p>Please sign up for our mailing list so we can let you know when the kits are available to purchase.</p>
+</div>
+</div>
+
+
 
 <div class="section email-signup">
     <div class=" two-column-grid border">
+        <main>
     <!-- Begin MailChimp Signup Form -->
       <div class="smallsignupform">
         <h2>Let's Be Friends!</h2>
@@ -101,6 +152,8 @@ Now you can create your own gingerbread house in the style of an authentic New O
           </div> 
         </form>
         </div>
+    </main>
     <!--End mc_embed_signup-->
     </div>
+</main>
 </div>

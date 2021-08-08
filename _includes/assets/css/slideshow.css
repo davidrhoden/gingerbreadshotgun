@@ -6,7 +6,7 @@
     justify-content: center;
 }
 
-#viewport {
+#viewport, #viewport2 {
   display: grid;
   grid-template-columns: 0.2fr 2.6fr 0.2fr;
   grid-template-rows: 1fr;
@@ -18,7 +18,7 @@
   width:calc(100vw - 2em);
 }
 
-#buttonLeft { grid-area: buttonLeft; }
+#buttonLeft, #buttonLeft2 { grid-area: buttonLeft; }
 
 .viewportCenter { 
 	grid-area: viewportCenter;
@@ -26,17 +26,15 @@
 	height: 30vh;
 }
 
-#buttonRight { grid-area: buttonRight; }
+#buttonRight, #buttonRight2 { grid-area: buttonRight; }
 
-
-#viewport p, #viewport li {
+#viewport p, #viewport li, #viewport2 p, #viewport2 li {
 	height: 30vh;
 	text-align: center;
 	width: 100%;
 }
 
-#viewport div p img, #viewport div li img {
-	/*border-radius:  2em;*/
+#viewport div p img, #viewport div li img, #viewport2 div p img, #viewport2 div li img {
 	border:  1em solid white;
 	box-shadow: 3px 3px 5px 1px rgba(0,0,0,0.25);
 	height:  74vw;
@@ -49,11 +47,11 @@
     -webkit-transition: opacity 1s ease-in-out;
 }
 
-#viewport p img.fadedIn, #viewport li img.fadedIn { 
+#viewport p img.fadedIn, #viewport li img.fadedIn, #viewport2 p img.fadedIn, #viewport2 li img.fadedIn { 
   	opacity: 1;
 }
 
-#viewport button {
+#viewport button, #viewport2 button {
 	background-color: transparent;
 	border-width: 0px;
 	display: grid;
@@ -65,18 +63,18 @@
   white-space: nowrap;
 }
 
-#caption {
+#caption, #caption2 {
 	padding: 1em 0;
 }
 
 @media screen and (min-width:768px) {
 
-	#viewport {
+	#viewport, #viewport2 {
 		height: 320px;
   	width: 360px;
 	}
 
-	#viewport div p img, #viewport div li img{ 
+	#viewport div p img, #viewport div li img, #viewport2 div p img, #viewport2 div li img { 
 		position: absolute;
 		top: 0;
 		left: 0;
@@ -85,7 +83,7 @@
 		width: auto;
 	}
 
-	#viewport button {
+	#viewport button, #viewport2 button {
 		display: grid;
 		vertical-align: middle;
 		height:  320px;

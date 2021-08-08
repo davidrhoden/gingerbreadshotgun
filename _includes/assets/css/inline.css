@@ -13,6 +13,14 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'Matchbook';
+    src: url('/static/fonts/Matchbook/matchbookregular-webfont.woff2') format('woff2'),
+         url('/static/fonts/Matchbook/matchbookregular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 :root {
 	--primary: black;
 	--secondary: orange;
@@ -23,6 +31,7 @@
 	--darkyellow: #f2d87f;
 	--text: rgb(0 0 0 / 59%);
 	--white:  whitesmoke;
+	--gingerbread: #ca994e;
 }
 
 *, *:before, *:after {
@@ -51,8 +60,33 @@ p {
 	width:100%;
 }
 
-.about main {
-	padding: 1em;
+.home main, .about main, .contact main, .order main {
+	padding: 1em 1em 0;
+}
+
+.about h1 {
+	display: none;
+}
+
+.about h1.show {
+	display: block;
+}
+
+.section.about-intro {
+	background: var(--darkyellow);
+	padding: 0;
+}
+
+.section.about-intro .left-side {
+	background: palegoldenrod;
+	margin:  10%;
+	padding:  10%;
+}
+
+.section.about-intro .right-side {
+	background: url(/static/img/joshua-doguet-kmnz1L1xSWU-unsplash.jpg) no-repeat center center;
+	background-size: cover;
+	height:  100%;
 }
 
 a[href],
@@ -64,10 +98,11 @@ a[href]:visited {
 img {
 	max-width: 100%;
 	height: auto;
+	max-height:  600px;
 }
 
 footer {
-	background-color: black;
+	background-color: rgba(2, 0, 36, .8);
 	color: whitesmoke;
 	font-family: sans-serif;
 	padding:  3em;
@@ -84,13 +119,12 @@ header {
 
 /* Header Logo (style as h2) */
 header em {
-	color: var(--title);
+	color: var(--gingerbread);
 	display: block;
-	font-family: 'DomaineDisplay', sans-serif;
+	font-family: 'Matchbook', sans-serif;
 	font-size: 1em;
 	font-weight: bold;
 	font-style: normal;
-	text-shadow: 1px 1px var(--midblue);
 }
 
 /* Header Nav */
@@ -152,6 +186,15 @@ h1 {
 	text-align: center;
 }
 
+.section.facebook-blue {
+	background: rgb(2,0,36);
+	background: linear-gradient(90deg, rgba(2,0,36,.8) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+    url(/static/img/paper-light.jpg);
+	background-position: center center;
+	background-size: cover;
+  	background-blend-mode: screen, difference, lighten;
+}
+
 .section.psych {
 	background: 
 	linear-gradient(purple 0%, red 90%), 
@@ -179,8 +222,18 @@ h1 {
 .section.email-signup .border {
 	border: 2px dotted goldenrod;
 	height: 100%;
-	padding:  0 2em;
 	width: 100%;
+}
+
+.has-inset-border:before {
+  content: " "; /* to ensure it displays */
+  position: absolute;
+  left: 1em;
+  right: 1em;
+  top: 1e;
+  bottom: 1em;
+  border: 2px dotted goldenrod;
+  pointer-events: none; /* user can't click on it */
 }
 
 .instagram {
@@ -285,6 +338,10 @@ button, .button {
 		padding: 3em 10%;
 	}
 
+	.section.email-signup .border {
+		padding:  0 2em;
+	}
+
 	.two-column-grid {
 	  display: grid; 
 	  grid-template-columns: 1fr 1fr; 
@@ -298,13 +355,36 @@ button, .button {
 	.left-side { grid-area: left-side; }
 	.right-side { grid-area: right-side; }
 
+	.left-side, .right-side {
+		display: grid;
+		justify-content: center;
+	}
+
 	.mobile-menu {
 		display: none;
+	}
+
+	.essay {
+		margin: 4em auto;
+		max-width:  45vw;
 	}
 
 	.instagram {
 		font-size: 2em;
 	}
+
+	.large-print {
+		font-size:  2.2em;
+	}
+
+	.medium-print {
+		font-size:  1.4em;
+	}
+
+	.medium-print h2 {
+		font-size:  1.6em;
+	}
+
 }
 
 /***** FLEX UTILITIES *****/
