@@ -11,7 +11,11 @@ eleventyNavigation:
 
 
 
-To be contacted regarding the availability and nearest retail location of New Orleans Original Shotgun Gingerbread Houses prior to November 15, 2021, please complete the following form:
+We can't wait to get the new Original Gingerbread Shotgun House kits into your hands and see what you build with them!
+
+If you'd like to be notified when the kits become available, please fill out the form below.
+
+Retailers: we'd love to hear from you! Please fill out the form and we'll ket you know when the kits are available for pre-orders.
 
 <div class="section email-signup">
   <div class="border">

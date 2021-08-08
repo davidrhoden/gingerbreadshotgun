@@ -70,6 +70,7 @@ p {
 
 .about h1.show {
 	display: block;
+	line-height: 1;
 }
 
 .section.about-intro {
