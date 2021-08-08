@@ -1,6 +1,6 @@
 ---
 layout: layouts/page.njk
-title: Get in touch
+title: Let's keep in touch!
 section: contact
 date: 2021-07-24T00:00:00.000Z
 permalink: /contact/index.html
