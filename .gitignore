@@ -2,5 +2,6 @@
 _site/
 node_modules/
 package-lock.json
-support_files
-
+support
+/static/fonts/Domaine
+/static/fonts/DomaineSans

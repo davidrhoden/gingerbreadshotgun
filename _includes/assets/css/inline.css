@@ -326,11 +326,7 @@ button, .button {
 	header nav {
         min-width: 20em;
     }
-
-	header em {
-		font-size: 2em;
-	}
-
+    
 	header nav li a {
 	    font-size: 1em;
 	    padding: .25em .5em;
